@@ -1483,7 +1483,7 @@ const Footer = () => {
               }}
               className='mt-3'
             >
-            REG ADD.-A-114 GULAB BAGH UTTAM NAGAR NEW DELHI 110059
+           FIN-LOOP BUSINESS SOLUTIONS PRIVATE LIMITED
             </p>
             <p
               style={{

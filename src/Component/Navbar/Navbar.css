@@ -1,0 +1,78 @@
+/** @format */
+
+.header {
+  display: flex;
+  background-color: #3749d5;
+  border: 1px solid #3749d5;
+  justify-content: space-between;
+}
+.header .mid {
+  margin-top: 10px;
+  display: flex;
+  gap: 3rem;
+  margin-left: 2%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.header .mid p {
+  color: black;
+  text-align: center;
+  padding: 5px;
+  padding-top: 10px;
+  font-size: 1rem;
+  border: 1px solid white;
+  background-color: #fff;
+  min-height: 30px;
+}
+.header .mid ul {
+  display: flex;
+  gap: 3rem;
+  margin-top: 10px;
+}
+.header .mid ul li {
+  list-style-type: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.header .right {
+  margin-right: 3%;
+  margin-top: 1%;
+}
+.header .right button {
+  font-size: 1rem;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .header .mid ul {
+    display: none;
+  }
+  .header .right {
+    display: none;
+  }
+  .sidebar {
+    display: block !important;
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    margin-top: 2%;
+  }
+}
+
+.sidebar {
+  display: none;
+}
+
+.sidebarMenu ul li{
+  list-style-type: none;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.sidebarMenu button{
+  width: 200px;
+  margin-top: 20px;
+}

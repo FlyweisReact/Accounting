@@ -1,0 +1,107 @@
+.freeTrial {
+    display: flex;
+    height: 100vh;
+}
+.freeTrial .left {
+    width: 50%;
+    background-color: #4c68f5;
+}
+
+.freeTrial .left h4{
+    color: #fff;
+    margin-top: 10%;
+    font-size: 2rem;
+    text-align: center;
+}
+.freeTrial .left p{
+    font-size: 32px;
+    margin-top: 6%;
+    margin-left: 15%;
+    line-height: 44px;
+    color: #fff;
+}
+.freeTrial .left img{
+    display: block;
+  margin-left: 15%;
+  margin-top: 9%;
+}
+.freeTrial .right{
+    width: 50%;
+}
+.freeTrial .right p{
+    font-weight: 500;
+    margin-top: 5%;
+font-size: 32px;
+line-height: 44px;
+text-align: center;
+}
+.freeTrial .right form {
+    width: 90%;
+    margin-left: 5%;
+}
+.freeTrial .right form input {
+    width: 90%;
+    background: #FFFFFF;
+border: 1px solid #656161;
+border-radius: 4px;
+padding: 20px;
+font-size: 1.4rem;
+outline: none;
+padding-left: 100px;
+}
+.freeTrial .right form {
+    margin-top: 10%;
+}
+.freeTrial .right form  div {
+    position: relative;
+    margin-top: 2%;
+}
+.freeTrial .right form div img{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+
+.freeTrial .right form button {
+    background: #4C68F5;
+border-radius: 8px;
+width: 300px;
+color: #fff;
+font-size: 1.4rem;
+margin-top: 3% !important; 
+padding: 10px;
+border: 1px solid #4C68F5;
+display: block;
+margin: auto;
+}
+
+@media (max-width : 768px) {
+    .freeTrial  {
+        display: block;
+    }
+    .freeTrial .left{
+        width: 100%;
+        margin-top: 0;
+    }
+    .freeTrial .left h4 {
+        margin-top: 0;
+    }
+    .freeTrial .left img{
+        margin-left: 0;
+        width: 450px  !important;
+        display: block;
+        margin: auto;
+    }
+    .freeTrial .right{
+        width: 100%;
+    }
+    .freeTrial .right form input {
+        width:90%;
+    }
+    .freeTrial .right .agree{
+        margin-top: 40px !important;
+    }
+    .freeTrial .right button {
+        margin-bottom: 3%;
+    }
+}

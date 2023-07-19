@@ -1,0 +1,199 @@
+/** @format */
+
+.hero {
+  background-image: url("../../Images/Group\ 7927.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 35vh;
+}
+
+.hero .first {
+  display: flex;
+  color: white;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-top: 1%;
+  width: 94%;
+  margin-left: 2%;
+}
+.hero .first div p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.hero .first div ul {
+  display: flex;
+  gap: 3rem;
+}
+.hero .first div ul li {
+  list-style-type: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.hero .second {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+}
+.hero .second h1 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero .second .down {
+  margin-right: 10%;
+}
+.hero .second .down button {
+  font-size: 1.4rem;
+  padding: 10px;
+  color: #0b0b95;
+  margin-left: 10px;
+  border: 1px solid #fff;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    position: relative;
+  }
+  .hero .first div ul {
+    display: none;
+  }
+  .dropbar {
+    display: block !important;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+  }
+  .hero .second {
+    display: block;
+    margin-top: 5%;
+  }
+  .hero .second .down {
+    margin-top: 2%;
+  }
+}
+
+.dropbar {
+  display: none;
+}
+
+
+
+
+
+
+.dropDownBtn{
+  background-color: transparent;
+ 
+}
+.dropDownBtn .dropdownBtn-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.dropDownBtn .dropdownBtn-Menu {
+  padding: 0 ;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.dropDownBtn .dropdownBtn-Menu .upperDiv{
+  color: #fff;
+  background-color: #0B0B95;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.dropDownBtn .dropdownBtn-Menu .downDiv{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  width: 90%;
+  margin-top: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+.dropDownBtn .dropdownBtn-Menu .downDiv .left .images {
+  display: flex;
+  gap: 30px;
+}
+.dropDownBtn .dropdownBtn-Menu .downDiv .right p{
+  background-color: #4C68F5 ;
+  padding: 2px;
+  font-size: 15px;
+  color: #fff;
+}
+.dropDownBtn .dropdownBtn-Menu .supplierDiv{
+  background-color: #eeeeee;
+  width: 90%;
+  margin-top: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+.dropDownBtn .dropdownBtn-Menu .supplierDiv .up{
+  display: flex;
+  justify-content: space-between;
+}
+.dropDownBtn .dropdownBtn-Menu .supplierDiv .up .left{
+  display: flex;
+  gap : 10px ;
+}
+.dropDownBtn .dropdownBtn-Menu .supplierDiv .up .right p{
+  background-color: #4C68F5 ;
+  padding: 2px;
+  font-size: 15px;
+  color: #fff;
+
+}
+
+.dropDownBtn .dropdownBtn-Menu .supplierDiv .buttons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.dropDownBtn .dropdownBtn-Menu .midDiv {
+  display: flex ; 
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.dropDownBtn .dropdownBtn-Menu .midDiv p{
+  font-size: 16px;
+  background-color: #4C68F5;
+  color: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.dropDownBtn .dropdownBtn-Menu .SalesDiv{
+  background-color: #eeeeee;
+  width: 90%;
+  margin-top: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  position: relative;
+}
+
+.dropDownBtn .dropdownBtn-Menu .SalesDiv .setting{
+ position: absolute;
+ right: 10px;
+ font-size: 1.4rem;
+
+}

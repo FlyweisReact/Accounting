@@ -1,0 +1,38 @@
+/** @format */
+
+.banner {
+  background-color: #3749d5;
+  padding: 5%;
+}
+.banner .image {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+.banner .image img {
+  width: 100%;
+}
+
+.banner .twoImage {
+  width: 90%;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 2%;
+  justify-content: space-between;
+}
+
+@media (max-width : 768px) {
+  .banner .twoImage {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .banner .twoImage div img{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 1% !important;
+  }
+  
+}

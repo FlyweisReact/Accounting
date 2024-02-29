@@ -1189,13 +1189,7 @@ const Footer = () => {
               Accountant and Partners
             </p>
             <p className="nn">Accountants Find Accountants Become a partner </p>
-            <p
-              onClick={() => navigate("/privacy-policy")}
-              style={{ cursor: "pointer" }}
-            >
-              {" "}
-              Privacy Policy{" "}
-            </p>
+            <p onClick={() => navigate("/privacy-policy")} className> Privacy Policy </p>
 
             <p onClick={() => setTermModal(true)} style={{ cursor: "pointer" }}>
               {" "}

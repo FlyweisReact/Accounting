@@ -10,7 +10,7 @@ const Footer = () => {
   const [termModal, setTermModal] = useState(false);
   const [refundModal, setRefundModal] = useState(false);
   const [disclaimerModal, setDisclaimerModal] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   // Terms and Condition
   function Terms(props) {
@@ -1189,13 +1189,7 @@ const Footer = () => {
               Accountant and Partners
             </p>
             <p className="nn">Accountants Find Accountants Become a partner </p>
-            <p
-              onClick={() => navigate("/privacy-policy")}
-              style={{ cursor: "pointer" }}
-            >
-              {" "}
-              Privacy Policy{" "}
-            </p>
+            <Link to="/privacy-policy"> Privacy Policy </Link>
 
             <p onClick={() => setTermModal(true)} style={{ cursor: "pointer" }}>
               {" "}

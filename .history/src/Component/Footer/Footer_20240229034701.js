@@ -4,13 +4,15 @@ import React, { useState } from "react";
 import img from "../../Images/image 17.png";
 import img3 from "../../Images/Group 7877.png";
 import { Modal } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [modalShow, setModalShow] = useState(false);
   const [termModal, setTermModal] = useState(false);
   const [refundModal, setRefundModal] = useState(false);
   const [disclaimerModal, setDisclaimerModal] = useState(false);
-  const navigate = useNavigate();
+  const [portalShow, setPortalShow] = useState(false);
+
 
   // Terms and Condition
   function Terms(props) {
@@ -1156,8 +1158,61 @@ const Footer = () => {
     );
   }
 
+  function PortalModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Invoicing Client Portal
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          An "Invoicing Client Portal" is a secure and user-friendly online
+          platform or interface that businesses use to interact with their
+          clients for invoicing and related financial transactions. It
+          streamlines the invoicing process, provides clients with easy access
+          to billing information, and enhances overall communication and
+          transparency between businesses and their clients. Here's a breakdown
+          of the concept:
+          <br />
+          <br />
+          <strong>1. Invoicing Process:</strong>
+          <ul>
+            <li>1. Invoicing Process:</li>
+            <li></li>
+          </ul>
+          <strong></strong>
+          <ul>
+            <li></li>
+          </ul>
+          <strong></strong>
+          <ul>
+            <li></li>
+          </ul>
+          <strong></strong>
+          <ul>
+            <li></li>
+          </ul>
+          <strong></strong>
+          <ul>
+            <li></li>
+          </ul>
+        </Modal.Body>
+      </Modal>
+    );
+  }
   return (
     <>
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+
       <Terms show={termModal} onHide={() => setTermModal(false)} />
       <CancellationRefund
         show={refundModal}
@@ -1189,14 +1244,11 @@ const Footer = () => {
               Accountant and Partners
             </p>
             <p className="nn">Accountants Find Accountants Become a partner </p>
-            <p
-              onClick={() => navigate("/privacy-policy")}
-              style={{ cursor: "pointer" }}
-            >
+            <Link to='/' ></Link>
+            <p onClick={() => na(true)} style={{ cursor: "pointer" }}>
               {" "}
               Privacy Policy{" "}
             </p>
-
             <p onClick={() => setTermModal(true)} style={{ cursor: "pointer" }}>
               {" "}
               Terms and Condition{" "}

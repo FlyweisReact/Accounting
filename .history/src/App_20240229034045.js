@@ -12,7 +12,6 @@ import Mail from "./Screens/Mail";
 import ForgetPassword from "./Screens/ForgetPassword";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import PrivacyPolicy from "./Screens/PrivacyPolicy";
 
 const App = () => {
   return (
@@ -27,7 +26,7 @@ const App = () => {
           <Route path="/singup" element={<Singup />} />
           <Route path="/mail" element={<Mail />} />
           <Route path="/forgetPassword" element={<ForgetPassword />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/pri"
         </Routes>
       </BrowserRouter>
     </>

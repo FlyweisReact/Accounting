@@ -369,11 +369,11 @@ code {
   color: #fff;
   padding: 70px 70px;
 }
-.AboutUs .Head {
+.AboutUs .Head{
   font-size: 2rem;
   font-weight: 600;
 }
-.AboutUs .content {
+.AboutUs .content{
   font-size: 20px;
   font-weight: normal;
 }
@@ -486,9 +486,7 @@ code {
   }
 }
 
-.privacy-policy {
-  display: flex;
-  justify-content: space-between;
-  min-height: 100vh;
-  flex-direction: column;
+
+.privacy-policy{
+  
 }

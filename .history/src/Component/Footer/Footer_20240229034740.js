@@ -4,13 +4,12 @@ import React, { useState } from "react";
 import img from "../../Images/image 17.png";
 import img3 from "../../Images/Group 7877.png";
 import { Modal } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [termModal, setTermModal] = useState(false);
   const [refundModal, setRefundModal] = useState(false);
   const [disclaimerModal, setDisclaimerModal] = useState(false);
-  const navigate = useNavigate();
 
   // Terms and Condition
   function Terms(props) {
@@ -1189,13 +1188,7 @@ const Footer = () => {
               Accountant and Partners
             </p>
             <p className="nn">Accountants Find Accountants Become a partner </p>
-            <p
-              onClick={() => navigate("/privacy-policy")}
-              style={{ cursor: "pointer" }}
-            >
-              {" "}
-              Privacy Policy{" "}
-            </p>
+            <Link to="/privacy-policy"> Privacy Policy </Link>
 
             <p onClick={() => setTermModal(true)} style={{ cursor: "pointer" }}>
               {" "}
